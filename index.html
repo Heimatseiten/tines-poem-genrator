@@ -7,36 +7,52 @@
     <title>AI Poetry</title>
   </head>
   <body>
-    <header>
-      <h1>
-        Einzig<strong>A</strong>rt<strong>I</strong>ge, kurze & stilvolle Liebes
-        Gedichte nur einen Klick entfernt
-      </h1>
-    </header>
-    <main>
-      <form>
-        <input type="text" placeholder="Gib hier einen Wort ein" autofocus />
-        <input type="submit" />
-      </form>
-      <div>
-        ***Poem place row 1***
-        <br />
-        ***Poem place row 2***
-      </div>
-    </main>
-    <footer>
-      This Poetry Generator is coded by
-      <a href="https://github.com/Heimatseiten" target="_blank">Tine Lüttgen</a>
-      and is open-sourced on
-      <a
-        href="https://github.com/Heimatseiten/tines-poem-genrator"
-        target="_blank"
-        >GitHub</a
-      >
-      & hosted on
-      <a href="https://tinespoetrybyai.netlify.app/" target="_blank">Netlify</a>
-    </footer>
-
+    <div class="container">
+      <header>
+        <h1>
+          Einzig<strong>A</strong>rt<strong>I</strong>ge, kurze & stilvolle
+          Liebes Gedichte nur einen Klick entfernt
+        </h1>
+      </header>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Gib hier einen Wort ein"
+            autofocus
+            required
+            autocomplete="off"
+            class="word"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="poem" id="poem">
+          💜
+          <br />
+          ***Poem place row 1***
+          <br />
+          ***Poem place row 2***
+          <br />
+          💜
+        </div>
+      </main>
+      <footer>
+        This Poetry Generator is coded by
+        <a href="https://github.com/Heimatseiten" target="_blank"
+          >Tine Lüttgen</a
+        >
+        and is open-sourced on
+        <a
+          href="https://github.com/Heimatseiten/tines-poem-genrator"
+          target="_blank"
+          >GitHub</a
+        >
+        & hosted on
+        <a href="https://tinespoetrybyai.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>

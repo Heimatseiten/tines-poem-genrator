@@ -1,6 +1,78 @@
 body {
-  background: fuchsia;
+  background: linear-gradient(
+    106.5deg,
+    rgba(255, 215, 185, 0.91) 23%,
+    rgba(223, 159, 247, 0.8) 93%
+  );
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+  background: linear-gradient(
+    180.2deg,
+    rgba(120, 85, 137, 0.514) -6.9%,
+    rgba(35, 9, 31, 0.781) 76.7%
+  );
+  border-radius: 15px;
+  border-style: outset;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: rgb(231, 214, 248);
+}
+header {
+  margin-bottom: 30px;
+}
+main {
+  margin-bottom: 30px;
+}
+form {
+  padding: 30px;
+
+  margin-bottom: 30px;
+  display: flex;
+}
+.word {
+  padding: 16px;
+  border: 1px solid rgba(173, 157, 243, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+  color: rgb(120, 85, 137);
+  background: rgb(231, 214, 248);
+}
+.button {
+  margin-left: 10px;
+  background: rgb(231, 214, 248);
+  color: rgb(120, 85, 137);
+  border: none;
+  width: 150px;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 14px 24px;
 }
 strong {
   color: lightgoldenrodyellow;
+}
+.poem {
+  color: rgba(255, 215, 185, 0.91);
+  font-size: 16px;
+  padding: 20px;
+  line-height: 30px;
+  border-left: 3px solid rgb(231, 214, 248);
+}
+a {
+  color: rgba(255, 215, 185, 0.91);
+}
+footer {
+  color: rgb(231, 214, 248);
+  text-align: center;
+  font-size: 14px;
+  padding: 20px;
 }
