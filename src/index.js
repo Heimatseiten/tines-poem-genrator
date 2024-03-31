@@ -17,6 +17,10 @@ function generatePoem(event) {
     "You are a romantic Poem expert and love to tell short and funny Love Poems. Your mission is to generate 4 line poems.Please use basic HTML.Please seperate the sentences with <br/>. Make sure to genrate the poem considering the input given in the form.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="blink"> Dein Gedicht über ${wordInput.value} ist in Arbeit </div>`;
+
   console.log("generating poem");
 
   axios.get(apiUrl).then(displayPoem);

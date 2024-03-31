@@ -26,25 +26,23 @@
         </h1>
       </header>
       <main>
-        <form id="poem-generator">
-          <input
-            type="text"
-            placeholder="Gib hier einen Wort ein"
-            autofocus
-            required
-            autocomplete="off"
-            class="word"
-            id="word"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div class="poem" id="poem">
-          💜
-          <br />
-
-          <br />
-          💜
+        <div class="form-container">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="Dieses Wort soll im Gedicht vorkommen"
+              autofocus
+              required
+              autocomplete="off"
+              class="word"
+              id="word"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">z.Bsp.: Herz, ein Name, für immer, ...</div>
         </div>
+
+        <div class="poem hidden" id="poem">💜</div>
       </main>
       <footer>
         This Poetry Generator is coded by
