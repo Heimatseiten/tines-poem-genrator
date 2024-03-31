@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Poetry</title>
   </head>
@@ -11,8 +18,11 @@
     <div class="container">
       <header>
         <h1>
-          Einzig<strong>A</strong>rt<strong>I</strong>ge, kurze & stilvolle
-          Liebes Gedichte nur einen Klick entfernt
+          Einzig<strong>A</strong>rt<strong>I</strong>ge
+          <br />
+          Liebes Gedichte
+          <br />
+          <italic>...nur einen 🖱️ entfernt...</italic>
         </h1>
       </header>
       <main>
@@ -24,6 +34,7 @@
             required
             autocomplete="off"
             class="word"
+            id="word"
           />
           <input type="submit" class="button" />
         </form>
